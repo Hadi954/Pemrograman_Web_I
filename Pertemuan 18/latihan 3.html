@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan dengan Objek Radio</title>
+    <script>
+        function radio_box(form) {
+            let ket = "";
+
+            if (form.wanita.checked) {
+                ket = "Wanita";
+            } else if (form.pria.checked) {
+                ket = "Pria";
+            } else {
+                ket = "Gak Jelas";
+            }
+
+            alert("Anda adalah seorang " + ket);
+        }
+    </script>
+</head>
+<body>
+
+<h1>Memasukkan Data Dengan Objek Radio</h1>
+<hr>
+
+<form>
+    <p>
+        <input type="radio" value="wanita" name="gender" id="wanita">
+        <label for="wanita">Wanita</label>
+    </p>
+
+    <p>
+        <input type="radio" value="pria" name="gender" id="pria">
+        <label for="pria">Pria</label>
+    </p>
+
+    <p>
+        <input type="button" value="CONFIRM" onclick="
+            const form = this.form;
+            const gender = form.gender.value;
+            alert('Anda adalah seorang ' + (gender || 'Gak Jelas'));
+        ">
+        <input type="reset" value="RESET">
+    </p>
+</form>
+
+</body>
+</html>
