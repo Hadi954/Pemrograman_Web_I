@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Latihan Dengan Objek Text</title>
+</head>
+
+<body>
+    <script language="JavaScript">
+        function tekan() {
+            var namastr = (document.f1form.nama.value);
+            var alamatstr = (document.f1form.alamat.value);
+            document.f1form.onama.value = namastr;
+            document.f1form.oalamat.value = alamatstr;
+            alert("lihat dulu");
+            document.write("Nama anda :", namastr, "<br>");
+            document.write("Alamat anda :", alamatstr, "<br>");
+        }
+    </script>
+
+    <form name="f1form">
+        <PRE><H1>Memasukkan Data Dengan Objek Teks</H1><hr>
+Nama Anda : <input type="text" size="11" name="nama">
+Alamat : <input type="text" size="25" name="alamat">
+</PRE><br>
+
+        <input type="button" value="kirim" onclick="tekan()">
+        <input type="reset" value="ulang"><br>
+
+        <H3>Output</H3>
+        <PRE>
+Jadi Nama Anda adalah: <input type="text" size="11" name="onama">
+Alamat Anda di : <input type="text" size="25" name="oalamat">
+</PRE>
+    </form>
+</body>
+
+</html>
