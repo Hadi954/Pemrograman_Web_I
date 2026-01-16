@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tugas C - Menghitung Luas Trapesium</title>
+</head>
+<body>
+<script type="text/javascript">
+
+// -------------------- VERSI A (nilai sudah didefinisikan) --------------------
+var garis_atas = 10;     // contoh nilai cm
+var garis_bawah = 14;    // contoh nilai cm
+var tinggi = 8;          // contoh nilai cm
+
+var luas = (garis_atas + garis_bawah) * tinggi / 2;
+
+document.write("Menghitung Luas Trapesium<br><br>");
+
+document.write("Diketahui :<br>");
+document.write("Garis Atas : " + garis_atas + " Cm<br>");
+document.write("Garis Bawah : " + garis_bawah + " Cm<br>");
+document.write("Tinggi : " + tinggi + " Cm<br><br>");
+
+document.write("Maka :<br>");
+document.write("Luas : ((" + garis_atas + " + " + garis_bawah + ") x " + tinggi + ") / 2 = " + luas + " Cm<sup>2</sup><hr><br>");
+
+
+
+// -------------------- VERSI B (input langsung di web) --------------------
+document.write("Versi Input Manual (Isi Sendiri)<br><br>");
+
+document.write('Garis Atas (cm): <input id="inpAtas" type="number"><br><br>');
+document.write('Garis Bawah (cm): <input id="inpBawah" type="number"><br><br>');
+document.write('Tinggi (cm): <input id="inpTinggi" type="number"><br><br>');
+document.write('<button onclick="hitungInput()">Hitung</button><br><br>');
+document.write('<div id="hasilInput"></div>');
+
+function hitungInput() {
+    var a = parseFloat(document.getElementById("inpAtas").value);
+    var b = parseFloat(document.getElementById("inpBawah").value);
+    var t = parseFloat(document.getElementById("inpTinggi").value);
+
+    if (isNaN(a) || isNaN(b) || isNaN(t)) {
+        alert("Isi semua nilai terlebih dahulu!");
+        return;
+    }
+
+    var hasil = (a + b) * t / 2;
+
+    var output = "";
+    output += "Diketahui :<br>";
+    output += "Garis Atas : " + a + " Cm<br>";
+    output += "Garis Bawah : " + b + " Cm<br>";
+    output += "Tinggi : " + t + " Cm<br><br>";
+
+    output += "Maka :<br>";
+    output += "Luas : ((" + a + " + " + b + ") x " + t + ") / 2 = " + hasil + " Cm<sup>2</sup>";
+
+    document.getElementById("hasilInput").innerHTML = output;
+}
+
+</script>
+</body>
+</html>
