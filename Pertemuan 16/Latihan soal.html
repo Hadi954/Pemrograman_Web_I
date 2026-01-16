@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KALKULATOR</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+        }
+        
+        .judul {
+            color: red;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        
+        table {
+            margin: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 class="judul">Selamat Mencoba</h2>
+
+    <table>
+        <tr>
+            <td><b>Nilai I</b></td>
+            <td></td>
+            <td><b>Nilai II</b></td>
+        </tr>
+
+        <tr>
+            <!-- input angka pertama -->
+            <td>
+                <input type="text" id="nilai1">
+            </td>
+
+            <!-- pilihan operator -->
+            <td>
+                <select id="operator">
+                <option value="+"> + </option>
+                <option value="-"> - </option>
+                <option value="*"> * </option>
+                <option value="/"> / </option>
+                <option value="^"> ^ </option>
+            </select>
+            </td>
+
+            <!-- input angka kedua -->
+            <td>
+                <input type="text" id="nilai2">
+            </td>
+
+            <td>
+                <button onclick="hitung()">Submit</button>
+            </td>
+        </tr>
+    </table>
+
+    <h3 id="hasil"></h3>
+
+    <script>
+        function hitung() {
+            var a = parseFloat(document.getElementById("nilai1").value);
+            var b = parseFloat(document.getElementById("nilai2").value);
+            var op = document.getElementById("operator").value;
+            var result;
+
+            if (op == "+") result = a + b;
+            else if (op == "-") result = a - b;
+            else if (op == "*") result = a * b;
+            else if (op == "/") result = a / b;
+            else if (op == "^") result = Math.pow(a, b);
+
+            document.getElementById("hasil").innerHTML = "Hasil: " + result;
+        }
+    </script>
+
+    <p style="margin-top:40px; font-size:12px;">
+        Created by Mohammad Hadi Purnomo, m.hadi220305@gmail.com
+    </p>
+
+</body>
+
+</html>
