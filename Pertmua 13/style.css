@@ -1,0 +1,161 @@
+body {
+    color: #d8d8f0;
+    background-color: #0b0b1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Link style */
+
+a:link {
+    color: #7dcfff;
+}
+
+a:visited {
+    color: #8b00ff;
+}
+
+a:active {
+    color: #b366ff;
+}
+
+a.specialLink:link {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+
+/* Paragraf dan teks */
+
+p:first-line {
+    font-style: italic;
+    margin-left: 25px;
+}
+
+.latihan {
+    background: #00ccff;
+    color: #ff0000;
+}
+
+h3 {
+    background-color: #1c1c5c;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+div:first-letter {
+    font-size: xx-large;
+    color: #ffff99;
+}
+
+
+/* List dalam list */
+
+ul ul li {
+    font-size: large;
+    font-style: italic;
+    color: #9acdff;
+}
+
+
+/* Heading */
+
+h2 em {
+    font-weight: 800;
+    color: #ff8c00;
+}
+
+h2.mainPoem {
+    color: #33ffcc;
+    line-height: 45px;
+    font-size: 38px;
+    text-shadow: 1px 1px 5px #003366;
+}
+
+
+/* Judul keren */
+
+.coolTitle {
+    font: 36pt/40pt 'Trebuchet MS', sans-serif;
+    font-variant: small-caps;
+    border: thick double #6666ff;
+    color: #ffffff;
+    background-color: #222244;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+/* Class dan ID gabungan */
+
+.specialName,
+#highlight1 {
+    font-family: 'Comic Sans MS', cursive;
+    color: rgb(90%, 100%, 0%);
+}
+
+
+/* Grouping elemen */
+
+h1,
+h2,
+div.footerNote,
+blockquote {
+    background-color: #1c1c5c;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Iklan */
+
+p.adNotice {
+    font: 11pt/13pt sans-serif;
+    margin: 10px 0px 5px 20px;
+    border: medium dashed #ff3399;
+    background: #222233 url(https://www.transparenttextures.com/patterns/az-subtle.png) repeat;
+    color: #ffe6f0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Kutipan */
+
+blockquote {
+    margin-left: 2cm;
+    color: #00ff99;
+    font-style: italic;
+    border-left: 5px solid #00ccff;
+    padding-left: 15px;
+}
+
+
+/* Footer */
+
+.footerNote {
+    padding: 12px;
+    font-size: large;
+    background-color: #2a2a70;
+    text-align: center;
+}
+
+
+/* Bagian teks khusus */
+
+.part1 {
+    font-size: x-large;
+    color: #ffaa33;
+}
+
+
+/* h5 paksa warna */
+
+h5 {
+    font-size: small !important;
+    color: #ff69b4 !important;
+}
